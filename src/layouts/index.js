@@ -27,7 +27,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+        Lawrence Tran
         </Link>
       </h1>
     </div>
