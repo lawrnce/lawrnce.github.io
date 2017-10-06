@@ -1,24 +1,20 @@
 {
   "assetsByChunkName": {
-    "path---product-iffy-camera": [
-      "path---product-iffy-camera-a0e39f21c11f6a62c5ab.js",
-      "path---product-iffy-camera-a0e39f21c11f6a62c5ab.js.map"
+    "component---src-pages-products-iffy-camera-js": [
+      "component---src-pages-products-iffy-camera-js-844391d393629263e550.js",
+      "component---src-pages-products-iffy-camera-js-844391d393629263e550.js.map"
     ],
-    "component---src-pages-product-iffy-camera-js": [
-      "component---src-pages-product-iffy-camera-js-844391d393629263e550.js",
-      "component---src-pages-product-iffy-camera-js-844391d393629263e550.js.map"
+    "component---src-pages-products-index-js": [
+      "component---src-pages-products-index-js-366aba7328fecf69833b.js",
+      "component---src-pages-products-index-js-366aba7328fecf69833b.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-05c665efaa1b3a69f83d.js",
       "component---src-pages-index-js-05c665efaa1b3a69f83d.js.map"
     ],
-    "component---src-pages-product-random-emoji-js": [
-      "component---src-pages-product-random-emoji-js-9674bb228294b5bd523f.js",
-      "component---src-pages-product-random-emoji-js-9674bb228294b5bd523f.js.map"
-    ],
-    "path---product-random-emoji": [
-      "path---product-random-emoji-a0e39f21c11f6a62c5ab.js",
-      "path---product-random-emoji-a0e39f21c11f6a62c5ab.js.map"
+    "path---products": [
+      "path---products-a0e39f21c11f6a62c5ab.js",
+      "path---products-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -28,25 +24,29 @@
       "path---technical-a0e39f21c11f6a62c5ab.js",
       "path---technical-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---products-random-emoji": [
+      "path---products-random-emoji-a0e39f21c11f6a62c5ab.js",
+      "path---products-random-emoji-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-products-random-emoji-js": [
+      "component---src-pages-products-random-emoji-js-9674bb228294b5bd523f.js",
+      "component---src-pages-products-random-emoji-js-9674bb228294b5bd523f.js.map"
+    ],
     "path---creative": [
       "path---creative-a0e39f21c11f6a62c5ab.js",
       "path---creative-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-599cce388a91b61e228a.js",
-      "component---src-layouts-index-js-599cce388a91b61e228a.js.map"
+      "component---src-layouts-index-js-a45ed05607a1ec0cba17.js",
+      "component---src-layouts-index-js-a45ed05607a1ec0cba17.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-technical-index-js": [
-      "component---src-pages-technical-index-js-78581d66c394c7f2097b.js",
-      "component---src-pages-technical-index-js-78581d66c394c7f2097b.js.map"
-    ],
-    "component---src-pages-product-index-js": [
-      "component---src-pages-product-index-js-6d0bd1b71b263c258d93.js",
-      "component---src-pages-product-index-js-6d0bd1b71b263c258d93.js.map"
+      "component---src-pages-technical-index-js-cc8d698f7c7396323d87.js",
+      "component---src-pages-technical-index-js-cc8d698f7c7396323d87.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -60,21 +60,21 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---product": [
-      "path---product-a0e39f21c11f6a62c5ab.js",
-      "path---product-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "app": [
-      "app-07fb7b620d0a990dae85.js",
-      "app-07fb7b620d0a990dae85.js.map"
+      "app-b4f5575517b4c37147da.js",
+      "app-b4f5575517b4c37147da.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-creative-index-js": [
-      "component---src-pages-creative-index-js-51138ffb077150308fed.js",
-      "component---src-pages-creative-index-js-51138ffb077150308fed.js.map"
+      "component---src-pages-creative-index-js-84715c267edeea42b884.js",
+      "component---src-pages-creative-index-js-84715c267edeea42b884.js.map"
+    ],
+    "path---products-iffy-camera": [
+      "path---products-iffy-camera-a0e39f21c11f6a62c5ab.js",
+      "path---products-iffy-camera-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
