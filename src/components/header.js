@@ -50,15 +50,22 @@ const NavigationList = styled.ul`
 const MenuWrapper = styled.div`
   width: 32px;
   height: 32px;
+  display: flex;
 
   @media (min-width: 700px) {
     display: none;
   }
 `;
 
+const HamburgerWrapper = styled.div`
+  padding: 10px 8px 10px 8px;
+`;
+
 const MobileMenu = ({ children }) =>
   <MenuWrapper>
+    <HamburgerWrapper>
      <Hamburger />
+    </HamburgerWrapper>
   </MenuWrapper>
 
 const ListLink = props =>

@@ -19,15 +19,15 @@ class Hamburger extends React.Component {
   render() {
     return (
       <HamburgerMenu
-      isOpen={this.state.open}
-      menuClicked={this.handleClick.bind(this, 3)}
-      width={18}
-      height={15}
-      strokeWidth={1}
-      rotate={0}
-      color='black'
-      borderRadius={0}
-      animationDuration='0.5'
+        isOpen={this.state.open}
+        menuClicked={this.handleClick.bind(this, 3)}
+        width={20}
+        height={12}
+        strokeWidth={1}
+        rotate={0}
+        color='black'
+        borderRadius={0}
+        animationDuration='0.2'
       />
     );
   }
