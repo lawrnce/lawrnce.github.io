@@ -10,6 +10,7 @@
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.9",
     "react-hamburger-menu": "^1.0.0",
+    "react-transition-group": "^1.2.1",
     "typography": "^0.16.6",
     "typography-theme-grand-view": "^0.15.10"
   },

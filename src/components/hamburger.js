@@ -14,15 +14,16 @@ class Hamburger extends React.Component {
     this.setState({
       open: !open
     });
+    this.props.onToggleMenu(!open)
   }
 
   render() {
     return (
       <HamburgerMenu
         isOpen={this.state.open}
-        menuClicked={this.handleClick.bind(this, 3)}
+        menuClicked={this.handleClick.bind(this)}
         width={20}
-        height={12}
+        height={10}
         strokeWidth={1}
         rotate={0}
         color='black'

@@ -39,7 +39,7 @@ const Description = ({ product }) =>
   <DescriptionWrapper>
     <p>
       { product.description }
-      <TextLink to={`/products/${ product.slug }`}> More info.</TextLink>
+      <TextLink to={`/products/${ product.slug }`}>More info.</TextLink>
     </p>
     <TextLink href={ product.link } target='_blank'>Visit App Store</TextLink>
   </DescriptionWrapper>
