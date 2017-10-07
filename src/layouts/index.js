@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import styled from "styled-components"
 
 import Header from '../components/header'
-import TextLink from '../components/text-link'
+import Contact from '../components/contact'
 
 const MainWrapper = styled.div`
   margin: 0 auto;
@@ -16,12 +16,6 @@ const MainWrapper = styled.div`
   @media (min-width: 700px) {
     margin-top: 0;
   }
-`;
-
-const FooterWrapper = styled.p`
-  text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 5rem;
 `;
 
 const TemplateWrapper = ({ children }) =>
@@ -37,9 +31,7 @@ const TemplateWrapper = ({ children }) =>
     <MainWrapper>
       {children()}
     </MainWrapper>
-    <FooterWrapper>
-      <TextLink>Email</TextLink> for professional resume.
-    </FooterWrapper>
+    <Contact />
   </div>
 
 TemplateWrapper.propTypes = {

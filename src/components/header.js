@@ -21,6 +21,7 @@ const Logo = styled.p`
   display: inline;
   color: black;
   font-size: 28px;
+  vertical-align: sub;
 `;
 
 const NavigationLink = styled(Link)`
@@ -29,14 +30,14 @@ const NavigationLink = styled(Link)`
 `;
 
 const DesktopNavigationList = styled.ul`
-  list-style: none;
-  margin: 0 0 0 0;
-  justify-content: space-around;
   display: none;
 
   @media (min-width: 700px) {
     display: flex;
-    margin: 0 0 0 2rem;
+    height: 32px;
+    list-style: none;
+    justify-content: space-around;
+    margin: -4px 1rem 0 0;
   }
 `;
 
@@ -58,9 +59,6 @@ const NavigationElement = styled.li`
   @media (min-width: 700px) {
     font-size: 20px;
     margin: 0 0 0 2rem;
-    display: inline;
-    vertical-align: sub;
-    justify-content: space-around;
   }
 `;
 

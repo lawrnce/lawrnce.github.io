@@ -1,7 +1,14 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+  margin-bottom: 4rem;
+`;
 
+const Title = styled.h1`
+  @media (min-width: 700px) {
+    padding-left: 1rem;
+  }
 `;
 
 const DescriptionWrapper = styled.p`
@@ -12,8 +19,12 @@ const DescriptionWrapper = styled.p`
 
 const TopDescription = ({ info }) =>
   <Wrapper>
-    <h1>{ info.title }</h1>
-    <DescriptionWrapper>{ info.description }</DescriptionWrapper>
+    <Title>
+      { info.title }
+    </Title>
+    <DescriptionWrapper>
+      { info.description }
+    </DescriptionWrapper>
   </Wrapper>
 
 export default TopDescription
