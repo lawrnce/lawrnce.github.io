@@ -42,11 +42,11 @@ const Contact = props =>
     </IconList>
 
     <Message>
-        Recruiters welcomed.<br/>
-        <OutboundLink to="mailto:lawrence.c.tran@outlook.com">
-          Email
-        </OutboundLink>
-        &nbsp;for a professional resume.
+      Recruiters welcomed.<br/>
+      <OutboundLink to="mailto:lawrence.c.tran@outlook.com">
+        Email
+      </OutboundLink>
+      &nbsp;for a professional resume.
     </Message>
   </Wrapper>
 

@@ -27,8 +27,8 @@ const Product = styled.div`
 const Icon = styled.img`
   margin: 0 auto 0 auto;
   padding: 2.5rem 0 2.5rem 0;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 
   @media (min-width: 700px) {
     margin: 0 0 0 0;
@@ -40,7 +40,7 @@ const DescriptionWrapper = styled.div`
 
   @media (min-width: 700px) {
     padding: 2.5rem 0 0 3rem;
-    width: 60%;
+    width: 50%;
   }
 `;
 
