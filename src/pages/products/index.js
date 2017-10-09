@@ -1,8 +1,7 @@
 import React from 'react'
 
-import ProductPanel from '../../components/product-panel'
+import ProductPanel from '../../components/product'
 import products from '../../data/products'
-import descriptions from '../../data/descriptions'
 
 export default () =>
  <div>

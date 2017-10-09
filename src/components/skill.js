@@ -22,6 +22,7 @@ const Grid = styled.div`
         'banner banner banner banner banner '
         '. title title title title '
         '. description description . skills'
+        '. projects projects . skills'
         '. projects projects . skills';
   }
 `;
