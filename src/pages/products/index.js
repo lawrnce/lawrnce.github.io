@@ -1,10 +1,10 @@
 import React from 'react'
 
-import ProductPanel from '../../components/product'
+import Product from '../../components/product'
 import products from '../../data/products'
 
 export default () =>
  <div>
-  {products.map(product => <ProductPanel product={ product } />)}
+  {products.map(product => <Product product={ product } />)}
  </div>
 

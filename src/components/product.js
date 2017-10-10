@@ -1,70 +1,83 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 import TextLink from './text-link'
+import OutboundLink from './outbound-link'
 
-const Title = styled.h2`
-  margin-bottom: 0;
+const Grid = styled.div`
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      'icon'
+      'title'
+      'description'
+      'appStore';
 
-  @media (min-width: 700px) {
-    padding-left: 2rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat( 2, 1fr );
+    grid-template-areas:
+        'icon title'
+        'icon description'
+        'icon appStore'
+        '. appStore';
   }
 `;
 
-const Product = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 0 auto;
-  margin-bottom: 3rem;
+const IconLink = styled(Link)`
+  grid-area: icon;
+  padding: 0 0 0 0;
 
-  @media (min-width: 700px) {
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
+  margin: 0 auto 0 auto;
 `;
 
 const Icon = styled.img`
-  margin: 0 auto 0 auto;
-  padding: 2.5rem 0 2.5rem 0;
-  width: 90px;
-  height: 90px;
+  width: 240px;
+  height: 240px;
 
-  @media (min-width: 700px) {
-    margin: 0 0 0 0;
+  @media (min-width: 768px) {
+    padding-left: 3rem;
   }
 `;
 
-const DescriptionWrapper = styled.div`
-  width: 100%;
+const Title = styled.h1`
+  grid-area: title;
+  margin-bottom: 0;
+  margin-top: 0;
+`;
 
-  @media (min-width: 700px) {
-    padding: 2.5rem 0 0 3rem;
-    width: 50%;
+const Description = styled.p`
+  grid-area: description;
+  margin: 0 0 0 0;
+
+  @media (min-width: 768px) {
+    width: 60%;
   }
 `;
 
-const Text = styled.p`
-  margin: 0 0 2rem 0;
+const AppStoreIcon = styled.img`
+  grid-area: appStore;
+  margin-top: 1.5rem;
 `;
 
-const Description = ({ product }) =>
-  <DescriptionWrapper>
-    <Text>
+const Product = ({ product }) =>
+  <Grid>
+    <IconLink to={`/products/${ product.slug }`}>
+      <Icon src={ product.icon } />
+    </IconLink>
+
+    <Title>{ product.title }</Title>
+
+    <Description>
       { product.description }
       <TextLink to={`/products/${ product.slug }`}>More info.</TextLink>
-    </Text>
-    <TextLink href={ product.link } target='_blank'>Visit App Store</TextLink>
-  </DescriptionWrapper>
+    </Description>
 
-const ProductPanel = ({ product }) =>
-  <div>
-    <Title>{ product.name }</Title>
-    <Product>
-      <Icon src={ product.image } />
-      <Description product={ product } />
-    </Product>
-  </div>
+    <OutboundLink to={ product.url }>
+      <AppStoreIcon src={ product.appStoreIcon } />
+    </OutboundLink>
+  </Grid>
 
-export default ProductPanel
+export default Product
 

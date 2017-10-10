@@ -14,16 +14,14 @@ const Grid = styled.div`
       'projects'
       'skills';
 
-  @media (min-width: 700px) {
-    padding-right: 3rem;
-    padding-left: 3rem;
+  @media (min-width: 768px) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
         'banner banner banner banner banner '
-        '. title title title title '
-        '. description description . skills'
-        '. projects projects . skills'
-        '. projects projects . skills';
+        '. title title title title'
+        '. description description  skills skills'
+        '. projects projects  skills skills'
+        '. projects projects  skills skills';
   }
 `;
 
@@ -34,7 +32,7 @@ const BannerImage = styled.img`
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     width: 50%;
     margin-bottom: 3rem;
   }
@@ -55,10 +53,11 @@ const SkillGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 25px;
   grid-gap: 0.5rem;
+  margin-top: 16px;
 
-  @media (min-width: 700px) {
-    margin-top: 16px;
+  @media (min-width: 768px) {
     grid-template-columns: 1fr;
+    margin-left: 5rem;
   }
 `;
 
@@ -87,7 +86,6 @@ const Skill = ({ skill }) =>
     <Title>{ skill.title }</Title>
 
     <Description>{ skill.description }</Description>
-
 
     <ProjectGrid>
       {skill.projects.map( project =>

@@ -46,7 +46,7 @@ const Contact = props =>
       <OutboundLink to="mailto:lawrence.c.tran@outlook.com">
         Email
       </OutboundLink>
-      &nbsp;for a professional resume.
+      &nbsp;for a professional resume.<br/>
     </Message>
   </Wrapper>
 
