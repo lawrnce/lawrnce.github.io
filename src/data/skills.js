@@ -50,7 +50,7 @@ const skills = {
       {
         url: 'https://github.com/lawrnce/GifCameraController',
         title: 'Gif Camera Controller',
-        description: 'Uses AV Foundation to quickly capture consecutive photos and render them into a gif. Available as a Cocoapod.'
+        description: 'A library using AV Foundation to quickly capture consecutive photos and render them into a gif. Available as a Cocoapod.'
       },
       {
         url: 'https://github.com/lawrnce/PopUpCollectionView',
@@ -58,19 +58,14 @@ const skills = {
         description: 'A collection view controller that vertically displays content by enlarging the cell view to fill the screen. Available as a Cocoapod.'
       },
       {
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: 'https://github.com/lawrnce/ColorMaskingButton',
         title: 'Color Masking Button',
-        description: 'Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down.'
+        description: 'A button for a progress bar that laterally changes color as the bar progresses. Available as a Cocoapod.'
       },
       {
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: 'https://github.com/lawrnce/TwitterStream',
         title: 'Twitter Stream',
-        description: 'Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down.'
-      },
-      {
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
-        title: 'Birthday Snap',
-        description: 'Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down.'
+        description: 'Practice project that filters live tweets by type.'
       },
       {
         url: 'https://github.com/lawrnce/PopUpCollectionView',
@@ -80,8 +75,8 @@ const skills = {
     ]
   },
   web: {
-    title: 'Web Development',
-    description: 'Lorem ipsum dolizzle brizzle amizzle, dang adipiscing bizzle. Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down. Sizzle erizzle. Fusce at dolor da bomb check out this tempizzle nizzle. Maurizzle pellentesque nibh et turpis',
+    title: 'Frontend Development',
+    description: 'I enjoy the fast pace jungle of frontend development. In my opinion, learning new web technologies gives a front row seat to the internet\'s evolution. Outside of my hobby projects, I also have done professional work.',
     image: require('../assets/svg/npm.svg'),
     items: [
       {
@@ -117,6 +112,10 @@ const skills = {
         image: require('../assets/img/graphql.png')
       },
       {
+        title: 'Redis',
+        image: require('../assets/img/redis.png')
+      },
+      {
         title: 'Node',
         image: require('../assets/img/node.png')
       },
@@ -127,25 +126,25 @@ const skills = {
     ],
     projects: [
       {
-        url: 'https://github.com/lawrnce/lawrnce.github.io',
+        url: 'https://github.com/lawrnce/lawrnce.github.io/tree/source',
         title: 'This Website',
-        description: 'This portfolio is written using React and statically generated with GatsbyJS.'
+        description: 'My portfolio is written using React and statically generated with GatsbyJS.'
       },
       {
         url: 'https://github.com/lawrnce/RedisPages',
         title: 'Redis Pages',
-        description: 'A rethinking of the traditional collection view.'
+        description: 'A small library that simplifies caching paginated content in Redis. Available on npm.'
       },
       {
         url: 'https://github.com/lawrnce/HotScoreServer',
         title: 'Hot Score Server',
-        description: 'A rethinking of the traditional collection view.'
+        description: 'A server that ranks posts based on the number of likes weighted by a time decay. Similar to HackerNews or Reddit.'
       },
     ]
   },
   game: {
     title: 'Game Development',
-    description: 'Lorem ipsum dolizzle brizzle amizzle, dang adipiscing bizzle. Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down. Sizzle erizzle. Fusce at dolor da bomb check out this tempizzle nizzle. Maurizzle pellentesque nibh et turpis',
+    description: 'I like making mobile games. I am planning to release my first game sometime in 2018.',
     image: require('../assets/img/gdc.jpg'),
     items: [
       {
@@ -161,12 +160,12 @@ const skills = {
       {
         url: 'https://github.com/lawrnce/PopUpCollectionView',
         title: 'Project Cobra Hidden',
-        description: 'Unfinished mobile game featuring..'
+        description: 'Alpha version'
       },
       {
         url: 'https://github.com/lawrnce/PopUpCollectionView',
         title: 'Project Steady Cat',
-        description: 'Unfinished mobile game featuring..'
+        description: ''
       },
     ]
   },
@@ -177,27 +176,27 @@ const skills = {
     items: [
       {
         title: 'Ableton Live',
-        image: require('../assets/img/c#.png')
+        image: require('../assets/img/ableton.png')
       },
       {
         title: 'iZotope RX',
-        image: require('../assets/img/c#.png')
+        image: require('../assets/img/rx.png')
       },
       {
         title: 'EQ & Compression',
-        image: require('../assets/img/unity.png')
+        image: require('../assets/img/music1.png')
       },
       {
         title: 'Sound Design',
-        image: require('../assets/img/c#.png')
+        image: require('../assets/img/music2.png')
       },
       {
         title: 'Sampling',
-        image: require('../assets/img/c#.png')
+        image: require('../assets/img/music3.png')
       },
       {
         title: 'Effects & Processing',
-        image: require('../assets/img/c#.png')
+        image: require('../assets/img/music1.png')
       },
     ],
     projects: [
@@ -220,7 +219,7 @@ const skills = {
         image: require('../assets/img/c#.png')
       },
       {
-        title: 'Photoshop',
+        title: 'Pyxel Edit',
         image: require('../assets/img/unity.png')
       }
     ],
