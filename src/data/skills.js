@@ -216,11 +216,11 @@ const skills = {
     items: [
       {
         title: 'Aesprite',
-        image: require('../assets/img/c#.png')
+        image: require('../assets/img/aesprite.png')
       },
       {
         title: 'Pyxel Edit',
-        image: require('../assets/img/unity.png')
+        image: require('../assets/img/pyxel.png')
       }
     ],
     projects: [
