@@ -48,27 +48,32 @@ const skills = {
     ],
     projects: [
       {
+        slug:'/technical/gif-camera-controller',
         url: 'https://github.com/lawrnce/GifCameraController',
         title: 'Gif Camera Controller',
         description: 'A library using AV Foundation to quickly capture consecutive photos and render them into a gif. Available as a Cocoapod.'
       },
       {
+        slug:'/technical/pop-up-collection-view',
         url: 'https://github.com/lawrnce/PopUpCollectionView',
         title: 'Pop Up Collection View Controller',
         description: 'A collection view controller that vertically displays content by enlarging the cell view to fill the screen. Available as a Cocoapod.'
       },
       {
+        slug:'',
         url: 'https://github.com/lawrnce/ColorMaskingButton',
         title: 'Color Masking Button',
         description: 'A button for a progress bar that laterally changes color as the bar progresses. Available as a Cocoapod.'
       },
       {
+        slug:'',
         url: 'https://github.com/lawrnce/TwitterStream',
         title: 'Twitter Stream',
         description: 'Practice project that filters live tweets by type.'
       },
       {
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        slug:'',
+        url: 'https://github.com/lawrnce/Cake',
         title: 'Project Cake',
         description: 'Alpha version of Iffy Camera.'
       },
@@ -76,7 +81,7 @@ const skills = {
   },
   web: {
     title: 'Frontend Development',
-    description: 'I enjoy the fast pace jungle of frontend development. In my opinion, learning new web technologies gives a front row seat to the internet\'s evolution. Outside of my hobby projects, I also have done professional work.',
+    description: 'I enjoy the fast pace jungle of frontend development. Learning new web technologies gives a front row seat to the internet\'s evolution. Outside of my hobby projects, I also have done professional work.',
     image: require('../assets/svg/npm.svg'),
     items: [
       {
@@ -126,16 +131,19 @@ const skills = {
     ],
     projects: [
       {
+        slug:'',
         url: 'https://github.com/lawrnce/lawrnce.github.io/tree/source',
         title: 'This Website',
         description: 'My portfolio is written using React and statically generated with GatsbyJS.'
       },
       {
+        slug:'',
         url: 'https://github.com/lawrnce/RedisPages',
         title: 'Redis Pages',
         description: 'A small library that simplifies caching paginated content in Redis. Available on npm.'
       },
       {
+        slug:'',
         url: 'https://github.com/lawrnce/HotScoreServer',
         title: 'Hot Score Server',
         description: 'A server that ranks posts based on the number of likes weighted by a time decay. Similar to HackerNews or Reddit.'
@@ -143,8 +151,8 @@ const skills = {
     ]
   },
   game: {
-    title: 'Game Development',
-    description: 'I like making mobile games. I am planning to release my first game sometime in 2018.',
+    title: 'Mobile Game Development',
+    description: 'I enjoy mobile games that feature music. Here are some of my experiments in creating interesting rhythm games.',
     image: require('../assets/img/gdc.jpg'),
     items: [
       {
@@ -158,20 +166,25 @@ const skills = {
     ],
     projects: [
       {
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: 'https://github.com/lawrnce/ProjectCobraHidden',
         title: 'Project Cobra Hidden',
-        description: 'Alpha version'
+        description: 'A Flappy Bird inspired rhythm game. The environment and obstacles move to the beat of the music.'
       },
       {
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: 'https://github.com/lawrnce/ProjectSteadyCat',
         title: 'Project Steady Cat',
-        description: ''
+        description: 'A 2D side-scroller featuring a robot flying through space along to the beat of the music.'
+      },
+      {
+        url: 'https://github.com/lawrnce/ProjectFutureBassGP',
+        title: 'Project Future Bass GP',
+        description: 'Experiment using touch controls to controlling a 2D spaceship.'
       },
     ]
   },
   music: {
     title: 'Music Production',
-    description: 'Lorem ipsum dolizzle brizzle amizzle, dang adipiscing bizzle. Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down. Sizzle erizzle. Fusce at dolor da bomb check out this tempizzle nizzle. Maurizzle pellentesque nibh et turpis',
+    description: 'I learned how to produce music before I learned to code. Here are some work samples.',
     image: require('../assets/img/gdc.jpg'),
     items: [
       {
@@ -201,17 +214,24 @@ const skills = {
     ],
     projects: [
       {
-        title: 'Pop Up Collection View Controller',
-        description: 'A rethinking of the traditional collection view.',
+        title: 'Drum Kits',
+        description: 'Drum sounds I made by mixing old drum machine samples.',
         image: require('../assets/img/unity.png'),
         slug:'',
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: '',
+      },
+      {
+        title: 'Synth Samples',
+        description: 'Samples made with Serum in Ableton Live.',
+        image: require('../assets/img/unity.png'),
+        slug:'',
+        url: '',
       },
     ]
   },
   pixel: {
     title: 'Pixel Art',
-    description: 'Lorem ipsum dolizzle brizzle amizzle, dang adipiscing bizzle. Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down. Sizzle erizzle. Fusce at dolor da bomb check out this tempizzle nizzle. Maurizzle pellentesque nibh et turpis',
+    description: 'In order to make games, I need artwork. Pixel art seemed like a fun choice.',
     image: require('../assets/img/gdc.jpg'),
     items: [
       {
@@ -229,13 +249,13 @@ const skills = {
         description: 'A rethinking of the traditional collection view.',
         image: require('../assets/img/unity.png'),
         slug:'',
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: '',
       },
     ]
   },
   design: {
     title: 'Product Design',
-    description: 'Lorem ipsum dolizzle brizzle amizzle, dang adipiscing bizzle. Sure we gonna chung velizzle, fo shizzle my nizzle volutpizzle, suscipit break it down, boofron vizzle, arcu. Pellentesque break it down break it down. Sizzle erizzle. Fusce at dolor da bomb check out this tempizzle nizzle. Maurizzle pellentesque nibh et turpis',
+    description: 'I believe that an understanding of both engineering and design is the key to making great products. Here are some design specs of my projects.',
     image: require('../assets/img/gdc.jpg'),
     items: [
       {
@@ -253,11 +273,11 @@ const skills = {
     ],
     projects: [
       {
-        title: 'Pop Up Collection View Controller',
-        description: 'A rethinking of the traditional collection view.',
+        title: 'Iffy Camera Design',
+        description: 'iOS photo app that adds text over gifs.',
         image: require('../assets/img/unity.png'),
         slug:'',
-        url: 'https://github.com/lawrnce/PopUpCollectionView',
+        url: '',
       },
     ]
   }
