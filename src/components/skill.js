@@ -81,7 +81,6 @@ const ProjectGrid = styled.div`
 
 const Skill = ({ skill }) =>
   <Grid>
-    <BannerImage src={ skill.image } />
 
     <Title>{ skill.title }</Title>
 
