@@ -1,8 +1,4 @@
----
-title: "Gif Camera Controller"
-date: "2017-08-10"
-back: "/technical"
----
+# Gif Camera Controller
 
 <p align="center">
 <img src="/Assets/preview.gif" />

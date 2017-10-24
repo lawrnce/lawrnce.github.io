@@ -1,5 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
 
+import Hero from '../components/hero'
 import Skill from '../components/skill'
 import Product from '../components/product'
 
@@ -8,9 +10,11 @@ import skills from '../data/skills'
 
 const IndexPage = () => (
   <div>
-    <h1>Who I am</h1>
-    <p>I am a creative technical dude. Here are the things I made, and here are the things I know.</p>
+
+    <Hero />
+
     {products.map(product => <Product product={ product } />)}
+
     <Skill skill={ skills['iOS'] } />
     <Skill skill={ skills['web'] } />
     <Skill skill={ skills['game'] } />

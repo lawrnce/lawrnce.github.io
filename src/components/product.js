@@ -16,49 +16,43 @@ const Grid = styled.div`
       'appStore';
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat( 2, 1fr );
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-        'icon title'
-        'icon description'
-        'icon appStore'
-        '. appStore';
+        'icon icon icon icon icon'
+        '. title title title title'
+        '. description description  appStore appStore';
   }
 `;
 
 const IconLink = styled(Link)`
   grid-area: icon;
   padding: 0 0 0 0;
-
   margin: 0 auto 0 auto;
 `;
 
 const Icon = styled.img`
-  width: 240px;
-  height: 240px;
-
-  @media (min-width: 768px) {
-    padding-left: 3rem;
-  }
+  width: 120px;
+  height: 120px;
 `;
 
 const Title = styled.h1`
   grid-area: title;
+  margin-top: 3rem;
   margin-bottom: 0;
-  margin-top: 0;
 `;
 
 const Description = styled.p`
   grid-area: description;
-  margin: 0 0 0 0;
-
-  @media (min-width: 768px) {
-    width: 60%;
-  }
 `;
 
-const AppStoreIcon = styled.img`
+const AppStoreIcon = styled(OutboundLink)`
   grid-area: appStore;
-  margin-top: 1.5rem;
+  margin: 16px auto 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr;
+    margin-left: 5rem;
+  }
 `;
 
 const Product = ({ product }) =>
@@ -68,15 +62,14 @@ const Product = ({ product }) =>
     </IconLink>
 
     <Title>{ product.title }</Title>
-
     <Description>
-      { product.description }
+      { product.description }<br />
       <TextLink to={`/products/${ product.slug }`}>More info.</TextLink>
     </Description>
 
-    <OutboundLink to={ product.url }>
-      <AppStoreIcon src={ product.appStoreIcon } />
-    </OutboundLink>
+    <AppStoreIcon to={ product.url }>
+      <img src={ product.appStoreIcon } />
+    </AppStoreIcon>
   </Grid>
 
 export default Product

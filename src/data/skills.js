@@ -2,7 +2,6 @@ const skills = {
   iOS: {
     title: 'iOS Engineering',
     description: 'In 2012, I began teaching myself iOS development. Since then, I have done both freelance and professional work. I have an interest in the iPhone’s hardware capabilities, such as the camera and sensors. My goal is to create consumer internet applications with mass appeal.',
-    image: require('../assets/img/ios.png'),
     items: [
       {
         title: 'Objective-C',
@@ -82,7 +81,6 @@ const skills = {
   web: {
     title: 'Frontend Development',
     description: 'I enjoy the fast pace jungle of frontend development. Learning new web technologies gives a front row seat to the internet\'s evolution. Outside of my hobby projects, I also have done professional work.',
-    image: require('../assets/svg/npm.svg'),
     items: [
       {
         title: 'HTML',
@@ -101,7 +99,7 @@ const skills = {
         image: require('../assets/img/python.png')
       },
       {
-        title: 'Amazon Web Services',
+        title: 'AWS',
         image: require('../assets/img/aws.png')
       },
       {
@@ -153,7 +151,6 @@ const skills = {
   game: {
     title: 'Mobile Game Development',
     description: 'I enjoy mobile games that feature music. Here are some of my experiments in creating interesting rhythm games.',
-    image: require('../assets/img/gdc.jpg'),
     items: [
       {
         title: 'C#',
@@ -185,7 +182,6 @@ const skills = {
   music: {
     title: 'Music Production',
     description: 'I learned how to produce music before I learned to code. Here are some work samples.',
-    image: require('../assets/img/gdc.jpg'),
     items: [
       {
         title: 'Ableton Live',
@@ -196,7 +192,7 @@ const skills = {
         image: require('../assets/img/rx.png')
       },
       {
-        title: 'EQ & Compression',
+        title: 'Dynamics',
         image: require('../assets/img/music1.png')
       },
       {
@@ -208,7 +204,7 @@ const skills = {
         image: require('../assets/img/music3.png')
       },
       {
-        title: 'Effects & Processing',
+        title: 'Effects',
         image: require('../assets/img/music1.png')
       },
     ],
@@ -232,7 +228,6 @@ const skills = {
   pixel: {
     title: 'Pixel Art',
     description: 'In order to make games, I need artwork. Pixel art seemed like a fun choice.',
-    image: require('../assets/img/gdc.jpg'),
     items: [
       {
         title: 'Aesprite',
@@ -256,7 +251,6 @@ const skills = {
   design: {
     title: 'Product Design',
     description: 'I believe that an understanding of both engineering and design is the key to making great products. Here are some design specs of my projects.',
-    image: require('../assets/img/gdc.jpg'),
     items: [
       {
         title: 'Photoshop',

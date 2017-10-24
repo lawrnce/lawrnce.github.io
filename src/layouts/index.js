@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import styled from "styled-components"
 
-import Header from '../components/header'
 import Contact from '../components/contact'
 
 const MainWrapper = styled.div`
@@ -27,7 +26,6 @@ const TemplateWrapper = ({ children }) =>
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
     <MainWrapper>
       {children()}
     </MainWrapper>
