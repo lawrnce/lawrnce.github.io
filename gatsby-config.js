@@ -10,15 +10,15 @@ module.exports = {
     //     pathToConfigModule: `src/utils/typography.js`,
     //   },
     // },
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
   ],
 }

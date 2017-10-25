@@ -1,32 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import OutboundLink from './outbound-link'
-
-const Grid = styled.div`
-  display: grid;
-  margin-top: 5rem;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-      'banner'
-      'title'
-      'description'
-      'projects'
-      'skills';
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:
-        'banner banner banner banner banner '
-        '. title title title title'
-        '. description description  skills skills'
-        '. projects projects  skills skills'
-        '. projects projects  skills skills';
-  }
-`;
+import ItemGrid from './item-grid'
+import Project from './project'
 
 const BannerImage = styled.img`
-  grid-area: banner;
+  grid-area: icon;
   width: 100%;
   height: auto;
   margin-right: auto;
@@ -43,12 +22,12 @@ const Title = styled.h1`
   margin-bottom: 0;
 `;
 
-const Description = styled.p`
-  grid-area: description;
+const Body = styled.div`
+  grid-area: body;
 `;
 
-const SkillGrid = styled.div`
-  grid-area: skills;
+const Side = styled.div`
+  grid-area: side;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 25px;
@@ -57,7 +36,6 @@ const SkillGrid = styled.div`
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr;
-    margin-left: 5rem;
   }
 `;
 
@@ -80,32 +58,31 @@ const ProjectGrid = styled.div`
 `;
 
 const Skill = ({ skill }) =>
-  <Grid>
+  <ItemGrid>
     <BannerImage src={ skill.image } />
 
     <Title>{ skill.title }</Title>
 
-    <Description>{ skill.description }</Description>
+    <Body>
+      <p>{ skill.description }</p>
 
-    <ProjectGrid>
-      {skill.projects.map( project =>
-        <p>
-          <OutboundLink to={ project.url }>{ project.title }</OutboundLink><br />
-          { project.description }
-        </p>
-      )}
-    </ProjectGrid>
+      <ProjectGrid>
+        {skill.projects.map( project =>
+          <Project project={ project } />
+        )}
+      </ProjectGrid>
+    </Body>
 
-    <SkillGrid>
+    <Side>
       {skill.items.map( skillItem =>
           <SkillTitle>
             <SkillImage src={ skillItem.image }/>
             { skillItem.title }
           </SkillTitle>
       )}
-    </SkillGrid>
+    </Side>
 
-  </Grid>
+  </ItemGrid>
 
 export default Skill
 

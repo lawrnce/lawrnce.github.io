@@ -5,21 +5,15 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-      'logo'
       'icon'
       'statement';
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-        'logo logo logo logo logo'
         'icon icon icon icon icon'
         '. statement statement statement .';
   }
-`;
-
-const Logo = styled.h1`
-  grid-area: logo;
 `;
 
 const Icon = styled.img`
@@ -38,10 +32,6 @@ const Statement = styled.p`
 
 const Hero = ({ props }) =>
   <Grid>
-    <Logo>
-      Lawrence Tran
-    </Logo>
-
     <Icon src={ require('../assets/img/panda.png') } />
 
     <Statement>

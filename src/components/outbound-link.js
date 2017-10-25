@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Link = styled.a`
-  color: #007AFF;
+  color: black;
   text-decoration: none;
   font-weight: lighter;
 `;

@@ -2,26 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import TextLink from './text-link'
+import ItemGrid from './item-grid'
+import BlueText from './blue-text'
 import OutboundLink from './outbound-link'
 
-const Grid = styled.div`
-  display: grid;
-  margin-top: 5rem;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-      'icon'
-      'title'
-      'description'
-      'appStore';
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:
-        'icon icon icon icon icon'
-        '. title title title title'
-        '. description description  appStore appStore';
-  }
+const ProductLink = styled(Link)`
+  color: black;
+  text-decoration: none;
 `;
 
 const IconLink = styled(Link)`
@@ -42,35 +29,42 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  grid-area: description;
+  grid-area: body;
 `;
 
 const AppStoreIcon = styled(OutboundLink)`
-  grid-area: appStore;
+  grid-area: side;
   margin: 16px auto 0 auto;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr;
-    margin-left: 5rem;
+    margin: 16px 0 0 0;
   }
 `;
 
 const Product = ({ product }) =>
-  <Grid>
-    <IconLink to={`/products/${ product.slug }`}>
+  <ItemGrid>
+    <IconLink to={`/${ product.slug }`}>
       <Icon src={ product.icon } />
     </IconLink>
 
-    <Title>{ product.title }</Title>
+    <Title>
+      <ProductLink to={`/${ product.slug }`}>
+          { product.title }
+      </ProductLink>
+    </Title>
+
     <Description>
-      { product.description }<br />
-      <TextLink to={`/products/${ product.slug }`}>More info.</TextLink>
+      <ProductLink to={`/${ product.slug }`}>
+        { product.description }<br />
+        <BlueText to={`/products/${ product.slug }`}>More info.</BlueText>
+      </ProductLink>
     </Description>
 
     <AppStoreIcon to={ product.url }>
       <img src={ product.appStoreIcon } />
     </AppStoreIcon>
-  </Grid>
+  </ItemGrid>
 
 export default Product
 

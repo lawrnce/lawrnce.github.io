@@ -4,7 +4,10 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import styled from "styled-components"
 
+import Header from '../components/header'
 import Contact from '../components/contact'
+
+require('prismjs/themes/prism-solarizedlight.css')
 
 const MainWrapper = styled.div`
   margin: 0 auto;
@@ -27,9 +30,10 @@ const TemplateWrapper = ({ children }) =>
       ]}
     />
     <MainWrapper>
+      <Header />
       {children()}
+      <Contact />
     </MainWrapper>
-    <Contact />
   </div>
 
 TemplateWrapper.propTypes = {

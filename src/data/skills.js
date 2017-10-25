@@ -47,31 +47,36 @@ const skills = {
     ],
     projects: [
       {
-        slug:'/technical/gif-camera-controller',
+        isOutbound: true,
+        slug:'gif-camera-controller',
         url: 'https://github.com/lawrnce/GifCameraController',
         title: 'Gif Camera Controller',
         description: 'A library using AV Foundation to quickly capture consecutive photos and render them into a gif. Available as a Cocoapod.'
       },
       {
-        slug:'/technical/pop-up-collection-view',
+        isOutbound: true,
+        slug:'pop-up-collection-view',
         url: 'https://github.com/lawrnce/PopUpCollectionView',
         title: 'Pop Up Collection View Controller',
         description: 'A collection view controller that vertically displays content by enlarging the cell view to fill the screen. Available as a Cocoapod.'
       },
       {
-        slug:'',
+        isOutbound: true,
+        slug:'color-masking-button',
         url: 'https://github.com/lawrnce/ColorMaskingButton',
         title: 'Color Masking Button',
         description: 'A button for a progress bar that laterally changes color as the bar progresses. Available as a Cocoapod.'
       },
       {
-        slug:'',
+        isOutbound: true,
+        slug:'twitter-stream',
         url: 'https://github.com/lawrnce/TwitterStream',
         title: 'Twitter Stream',
         description: 'Practice project that filters live tweets by type.'
       },
       {
-        slug:'',
+        isOutbound: true,
+        slug:'cake',
         url: 'https://github.com/lawrnce/Cake',
         title: 'Project Cake',
         description: 'Alpha version of Iffy Camera.'
@@ -129,19 +134,22 @@ const skills = {
     ],
     projects: [
       {
-        slug:'',
+        isOutbound: true,
+        slug:'portfolio',
         url: 'https://github.com/lawrnce/lawrnce.github.io/tree/source',
         title: 'This Website',
         description: 'My portfolio is written using React and statically generated with GatsbyJS.'
       },
       {
-        slug:'',
+        isOutbound: true,
+        slug:'redis-pages',
         url: 'https://github.com/lawrnce/RedisPages',
         title: 'Redis Pages',
         description: 'A small library that simplifies caching paginated content in Redis. Available on npm.'
       },
       {
-        slug:'',
+        isOutbound: true,
+        slug:'hot-score-server',
         url: 'https://github.com/lawrnce/HotScoreServer',
         title: 'Hot Score Server',
         description: 'A server that ranks posts based on the number of likes weighted by a time decay. Similar to HackerNews or Reddit.'
@@ -163,16 +171,22 @@ const skills = {
     ],
     projects: [
       {
+        isOutbound: true,
+        slug: 'project-cobra-hidden',
         url: 'https://github.com/lawrnce/ProjectCobraHidden',
         title: 'Project Cobra Hidden',
         description: 'A Flappy Bird inspired rhythm game. The environment and obstacles move to the beat of the music.'
       },
       {
+        isOutbound: true,
+        slug: 'project-steady-cat',
         url: 'https://github.com/lawrnce/ProjectSteadyCat',
         title: 'Project Steady Cat',
         description: 'A 2D side-scroller featuring a robot flying through space along to the beat of the music.'
       },
       {
+        isOutbound: true,
+        slug: 'project-future-bass-gp',
         url: 'https://github.com/lawrnce/ProjectFutureBassGP',
         title: 'Project Future Bass GP',
         description: 'Experiment using touch controls to controlling a 2D spaceship.'
@@ -210,18 +224,20 @@ const skills = {
     ],
     projects: [
       {
+        isOutbound: false,
+        slug: 'drum-kits',
+        url: '',
         title: 'Drum Kits',
         description: 'Drum sounds I made by mixing old drum machine samples.',
         image: require('../assets/img/unity.png'),
-        slug:'',
-        url: '',
       },
       {
+        isOutbound: false,
+        slug: 'sound-samples',
+        url: '',
         title: 'Synth Samples',
         description: 'Samples made with Serum in Ableton Live.',
         image: require('../assets/img/unity.png'),
-        slug:'',
-        url: '',
       },
     ]
   },
@@ -240,6 +256,7 @@ const skills = {
     ],
     projects: [
       {
+        isOutbound: true,
         title: 'Pop Up Collection View Controller',
         description: 'A rethinking of the traditional collection view.',
         image: require('../assets/img/unity.png'),
@@ -267,10 +284,11 @@ const skills = {
     ],
     projects: [
       {
+        isOutbound: false,
         title: 'Iffy Camera Design',
         description: 'iOS photo app that adds text over gifs.',
         image: require('../assets/img/unity.png'),
-        slug:'',
+        slug:'iffy-camera-design',
         url: '',
       },
     ]
