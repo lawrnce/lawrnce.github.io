@@ -16,8 +16,8 @@ const IndexPage = () => (
     {products.map(product => <Product product={ product } />)}
 
     <Skill skill={ skills['iOS'] } />
-    <Skill skill={ skills['web'] } />
     <Skill skill={ skills['game'] } />
+    <Skill skill={ skills['web'] } />
     <Skill skill={ skills['design'] } />
     <Skill skill={ skills['music'] } />
     <Skill skill={ skills['pixel'] } />
