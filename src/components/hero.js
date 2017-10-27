@@ -35,7 +35,7 @@ const Hero = ({ props }) =>
     <Icon src={ require('../assets/img/panda.png') } />
 
     <Statement>
-Hi my name is Lawrence, and I like making products. My goal is to be proficient in both engineering and design in order to effectively communicate across team dynamics. Below are my personal projects consisting of prototypes, libraries, and apps in the AppStore.
+Hi my name is Lawrence, and I like making products. My goal is to be proficient in both engineering and design in order to effectively communicate across dynamic product teams. Below are my personal projects consisting of prototypes, libraries, and apps in the AppStore.
     </Statement>
   </Grid>
 
