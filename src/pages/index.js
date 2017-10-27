@@ -19,8 +19,8 @@ const IndexPage = () => (
     <Skill skill={ skills['game'] } />
     <Skill skill={ skills['web'] } />
     <Skill skill={ skills['design'] } />
-    <Skill skill={ skills['music'] } />
     <Skill skill={ skills['pixel'] } />
+    <Skill skill={ skills['music'] } />
   </div>
 )
 

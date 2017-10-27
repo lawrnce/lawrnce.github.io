@@ -213,19 +213,12 @@ const skills = {
     ],
     projects: [
       {
-        slug: 'drum-kits',
-        url: '',
-        title: 'Drum Kits',
-        description: 'Drum sounds I made by mixing old drum machine samples.',
-        image: require('../assets/img/unity.png'),
-      },
-      {
         slug: 'sound-samples',
-        url: '',
-        title: 'Synth Samples',
-        description: 'Samples made with Serum in Ableton Live.',
+        url: 'https://soundcloud.com/lawrencetran/sets',
+        title: 'My Soundcloud',
+        description: 'Various sounds and samples',
         image: require('../assets/img/unity.png'),
-      },
+      }
     ]
   },
   pixel: {
@@ -243,11 +236,11 @@ const skills = {
     ],
     projects: [
       {
-        title: 'Pop Up Collection View Controller',
-        description: 'A rethinking of the traditional collection view.',
+        title: 'Del the Robot',
+        description: 'A robot character I use when prototyping game ideas.',
         image: require('../assets/img/unity.png'),
         slug:'',
-        url: '',
+        url: 'https://www.behance.net/gallery/58191601/Del-The-Robot',
       },
     ]
   },
@@ -274,7 +267,7 @@ const skills = {
         description: 'iOS photo app that adds text over gifs.',
         image: require('../assets/img/unity.png'),
         slug:'iffy-camera-design',
-        url: '',
+        url: 'https://www.behance.net/gallery/58181975/Iffy-Camera',
       },
     ]
   }

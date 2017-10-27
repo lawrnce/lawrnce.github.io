@@ -9,10 +9,10 @@ const Grid = styled.div`
       'statement';
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1.25fr 3fr 1.25fr;
     grid-template-areas:
-        'icon icon icon icon icon'
-        '. statement statement statement .';
+        'icon icon icon'
+        '. statement .';
   }
 `;
 
@@ -20,7 +20,7 @@ const Icon = styled.img`
   grid-area: icon;
   width: 100px;
   height: 100px;
-  margin: 0 auto 0 auto;
+  margin: 10rem auto 3rem auto;
 `;
 
 const Statement = styled.p`
@@ -35,10 +35,7 @@ const Hero = ({ props }) =>
     <Icon src={ require('../assets/img/panda.png') } />
 
     <Statement>
-      The quick brown fox jumps over the lazy dog.
-      The quick brown fox jumps over the lazy dog.
-      The quick brown fox jumps over the lazy dog.
-      The quick brown fox jumps over the lazy dog.
+Hi my name is Lawrence, and I like making products. My goal is to be proficient in both engineering and design in order to effectively communicate across team dynamics. Below are my personal projects consisting of prototypes, libraries, and apps in the AppStore.
     </Statement>
   </Grid>
 
