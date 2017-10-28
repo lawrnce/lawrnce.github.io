@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 import SocialIcon from './social-icon';
 import OutboundLink from './outbound-link';
+import BlueText from './blue-text'
 
 const Wrapper = styled.div`
   margin-top: 3rem;
-  margin-bottom: 4rem;
 
   @media (min-width: 700px) {
     margin-top: 5rem;
@@ -43,7 +43,7 @@ const Contact = props =>
 
     <Message>
       <OutboundLink to="mailto:lawrence.c.tran@outlook.com">
-        Email
+        <BlueText>Email</BlueText>
       </OutboundLink>
       &nbsp;for resume.<br/>
     </Message>

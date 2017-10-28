@@ -6,12 +6,12 @@ import ItemGrid from './item-grid'
 import BlueText from './blue-text'
 import OutboundLink from './outbound-link'
 
-const ProductLink = styled(Link)`
+const ProductLink = styled(OutboundLink)`
   color: black;
   text-decoration: none;
 `;
 
-const IconLink = styled(Link)`
+const IconLink = styled(OutboundLink)`
   grid-area: icon;
   padding: 0 0 0 0;
   margin: 0 auto 0 auto;
@@ -44,20 +44,18 @@ const AppStoreIcon = styled(OutboundLink)`
 
 const Product = ({ product }) =>
   <ItemGrid>
-    <IconLink to={`/${ product.slug }`}>
+    <IconLink to={ product.url }>
       <Icon src={ product.icon } />
     </IconLink>
 
     <Title>
-      <ProductLink to={`/${ product.slug }`}>
-          { product.title }
-      </ProductLink>
+        { product.title }
     </Title>
 
     <Description>
-      <ProductLink to={`/${ product.slug }`}>
+      <ProductLink to={ product.url }>
         { product.description }<br />
-        <BlueText to={`/products/${ product.slug }`}>More info.</BlueText>
+        <BlueText>More info.</BlueText>
       </ProductLink>
     </Description>
 

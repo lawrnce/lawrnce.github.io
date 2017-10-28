@@ -5,7 +5,7 @@ const products = [
     icon: require('../assets/img/iffy_camera_icon.png'),
     appStoreIcon: require('../assets/svg/app_store.svg'),
     slug: 'iffy-camera',
-    url: 'https://www.reddit.com'
+    url: 'https://itunes.apple.com/us/app/iffy-camera/id1300464164?ls=1&mt=8'
   },
   // {
   //   title: 'Random Emoji',

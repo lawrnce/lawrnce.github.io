@@ -7,8 +7,6 @@ import styled from "styled-components"
 import Header from '../components/header'
 import Contact from '../components/contact'
 
-require('prismjs/themes/prism-solarizedlight.css')
-
 const MainWrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
@@ -25,8 +23,7 @@ const TemplateWrapper = ({ children }) =>
     <Helmet
       title="Lawrence Tran"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'Portfolio', content: 'stuff' }
       ]}
     />
     <MainWrapper>
