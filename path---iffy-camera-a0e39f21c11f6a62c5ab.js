@@ -1,2 +1,0 @@
-webpackJsonp([0xd80b41e9e312],{"./node_modules/json-loader/index.js!./.cache/json/iffy-camera.json":function(e,o){e.exports={pathContext:{}}}});
-//# sourceMappingURL=path---iffy-camera-a0e39f21c11f6a62c5ab.js.map

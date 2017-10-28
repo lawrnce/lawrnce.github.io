@@ -1,2 +1,0 @@
-webpackJsonp([54956165692588],{"./node_modules/json-loader/index.js!./.cache/json/product-random-emoji.json":function(o,n){o.exports={pathContext:{}}}});
-//# sourceMappingURL=path---product-random-emoji-a0e39f21c11f6a62c5ab.js.map
