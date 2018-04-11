@@ -15,7 +15,7 @@ const ItemGrid = styled.div`
     grid-template-columns: 1.25fr 3fr .75fr 2fr ;
     grid-template-areas:
         'icon icon icon icon icon '
-        '. title title title title'
+        'title title title title title'
         '. body . side side';
   }
 `;

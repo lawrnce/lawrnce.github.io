@@ -4,16 +4,16 @@ module.exports = {
     title: `Lawrence Tran`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography.js`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-favicon`,
+    // `gatsby-plugin-favicon`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

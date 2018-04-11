@@ -18,14 +18,16 @@ const IconLink = styled(OutboundLink)`
 `;
 
 const Icon = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 0;
 `;
 
 const Title = styled.h1`
   grid-area: title;
-  margin-top: 3rem;
-  margin-bottom: 0;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 `;
 
 const Description = styled.p`

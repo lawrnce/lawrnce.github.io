@@ -1,6 +1,42 @@
 const skills = {
+  game: {
+    headerVideo: require('../assets/mp4/20180410.mp4'),
+    title: 'Unity',
+    description: 'I enjoy mobile games that feature music. Here are some of my experiments in creating interesting rhythm games.',
+    items: [
+      {
+        title: 'C#',
+        image: require('../assets/img/c#.png')
+      },
+      {
+        title: 'Unity',
+        image: require('../assets/img/unity.png')
+      }
+    ],
+    projects: [
+      {
+        slug: 'project-cobra-hidden',
+        url: 'https://github.com/lawrnce/ProjectCobraHidden',
+        title: 'Project Cobra Hidden',
+        description: 'A Flappy Bird inspired rhythm game. The environment and obstacles move to the beat of the music.'
+      },
+      {
+        slug: 'project-steady-cat',
+        url: 'https://github.com/lawrnce/ProjectSteadyCat',
+        title: 'Project Steady Cat',
+        description: 'A 2D side-scroller featuring a robot flying through space along to the beat of the music.'
+      },
+      {
+        slug: 'project-future-bass-gp',
+        url: 'https://github.com/lawrnce/ProjectFutureBassGP',
+        title: 'Project Future Bass GP',
+        description: 'Experiment using touch controls to controlling a 2D spaceship.'
+      },
+    ]
+  },
   iOS: {
-    title: 'iOS Engineering',
+    headerVideo: require('../assets/mp4/20180406.mp4'),
+    title: 'iOS',
     description: 'In 2012, I began teaching myself iOS development. Since then, I have done both freelance and professional work. I have an interest in the iPhone’s hardware capabilities, such as the camera and sensors. My goal is to create consumer internet applications with mass appeal.',
     items: [
       {
@@ -41,7 +77,6 @@ const skills = {
       },
       {
         title: 'AV Foundation',
-        // image: require('../assets/img/av_foundation.png')
         image: require('../assets/img/apple.png')
       },
     ],
@@ -64,22 +99,11 @@ const skills = {
         title: 'Color Masking Button',
         description: 'A button for a progress bar that laterally changes color as the bar progresses. Available as a Cocoapod.'
       },
-      {
-        slug:'twitter-stream',
-        url: 'https://github.com/lawrnce/TwitterStream',
-        title: 'Twitter Stream',
-        description: 'Practice project that filters live tweets by type.'
-      },
-      {
-        slug:'cake',
-        url: 'https://github.com/lawrnce/Cake',
-        title: 'Project Cake',
-        description: 'Alpha version of Iffy Camera.'
-      },
     ]
   },
   web: {
-    title: 'Frontend Development',
+    headerVideo: require('../assets/mp4/20180408.mp4'),
+    title: 'Frontend',
     description: 'I enjoy the fast pace jungle of frontend development. Learning new web technologies gives a front row seat to the internet\'s evolution. Outside of my hobby projects, I also have done professional work.',
     items: [
       {
@@ -148,42 +172,9 @@ const skills = {
       },
     ]
   },
-  game: {
-    title: 'Mobile Game Development',
-    description: 'I enjoy mobile games that feature music. Here are some of my experiments in creating interesting rhythm games.',
-    items: [
-      {
-        title: 'C#',
-        image: require('../assets/img/c#.png')
-      },
-      {
-        title: 'Unity',
-        image: require('../assets/img/unity.png')
-      }
-    ],
-    projects: [
-      {
-        slug: 'project-cobra-hidden',
-        url: 'https://github.com/lawrnce/ProjectCobraHidden',
-        title: 'Project Cobra Hidden',
-        description: 'A Flappy Bird inspired rhythm game. The environment and obstacles move to the beat of the music.'
-      },
-      {
-        slug: 'project-steady-cat',
-        url: 'https://github.com/lawrnce/ProjectSteadyCat',
-        title: 'Project Steady Cat',
-        description: 'A 2D side-scroller featuring a robot flying through space along to the beat of the music.'
-      },
-      {
-        slug: 'project-future-bass-gp',
-        url: 'https://github.com/lawrnce/ProjectFutureBassGP',
-        title: 'Project Future Bass GP',
-        description: 'Experiment using touch controls to controlling a 2D spaceship.'
-      },
-    ]
-  },
   music: {
-    title: 'Music Production',
+    headerVideo: require('../assets/mp4/20180407.mp4'),
+    title: 'Music',
     description: 'I learned how to produce music before I learned to code. Here are some work samples.',
     items: [
       {
@@ -221,10 +212,23 @@ const skills = {
       }
     ]
   },
-  pixel: {
-    title: 'Pixel Art',
-    description: 'In order to make games, I need artwork. Pixel art seemed like a fun choice.',
+  design: {
+    headerVideo: require('../assets/mp4/20180330.mp4'),
+    title: 'Design',
+    description: 'I believe that an understanding of both engineering and design is the key to making great products. Here are some design.',
     items: [
+      {
+        title: 'Photoshop',
+        image: require('../assets/img/photoshop.png')
+      },
+      {
+        title: 'Sketch',
+        image: require('../assets/img/sketch.png')
+      },
+      {
+        title: 'Origami Studio',
+        image: require('../assets/img/origami.png')
+      },
       {
         title: 'Aesprite',
         image: require('../assets/img/aesprite.png')
@@ -242,26 +246,6 @@ const skills = {
         slug:'',
         url: 'https://www.behance.net/gallery/58191601/Del-The-Robot',
       },
-    ]
-  },
-  design: {
-    title: 'Product Design',
-    description: 'I believe that an understanding of both engineering and design is the key to making great products. Here are some design specs of my projects.',
-    items: [
-      {
-        title: 'Photoshop',
-        image: require('../assets/img/photoshop.png')
-      },
-      {
-        title: 'Sketch',
-        image: require('../assets/img/sketch.png')
-      },
-      {
-        title: 'Origami Studio',
-        image: require('../assets/img/origami.png')
-      },
-    ],
-    projects: [
       {
         title: 'Iffy Camera Design',
         description: 'iOS photo app that adds text over gifs.',

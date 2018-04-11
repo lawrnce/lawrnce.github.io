@@ -1,43 +1,62 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-      'icon'
-      'statement';
+const HeroDiv = styled.div`
+  position: relative;
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
 
-  @media (min-width: 768px) {
-    grid-template-columns: 1.25fr 3fr 1.25fr;
-    grid-template-areas:
-        'icon icon icon'
-        '. statement .';
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
   }
 `;
 
-const Icon = styled.img`
-  grid-area: icon;
-  width: 100px;
-  height: 100px;
-  margin: 10rem auto 3rem auto;
+const HeroVideo = styled.video`
+  width: 100%;
+  height: 100%;
 `;
 
-const Statement = styled.p`
-  grid-area: statement;
-  text-align: justify;
-  font-size: 24px;
-  line-height: 30px;
+const StatementDiv = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+`;
+
+const LargeHeader = styled.h1`
+  font-size: 132px;
+  height: auto;
+  margin: 0 0 0 0;
+  color: white;
+  @media (max-width: 480px) {
+    font-size: 82px;
+  }
+`;
+
+const SmallHeader = styled.h2`
+  font-size: 98px;
+  height: auto;
+  margin: 0 0 0 0;
+  color: white;
+  @media (max-width: 480px) {
+    font-size: 62px;
+  }
 `;
 
 const Hero = ({ props }) =>
-  <Grid>
-    <Icon src={ require('../assets/img/panda.png') } />
+  <HeroDiv>
+    <HeroVideo autoplay loop src={ require('../assets/mp4/20180409.mp4') }/>
 
-    <Statement>
-Hi my name is Lawrence, and I like making products. My goal is to be proficient in both engineering and design in order to effectively communicate across dynamic product teams. Below are my personal projects consisting of prototypes, libraries, and apps in the AppStore.
-    </Statement>
-  </Grid>
+    <StatementDiv>
+      <LargeHeader>I make</LargeHeader>
+      <SmallHeader>
+        Software<br />Music<br />Games
+      </SmallHeader>
+    </StatementDiv>
+  </HeroDiv>
 
 export default Hero
 
