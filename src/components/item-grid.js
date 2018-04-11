@@ -4,12 +4,12 @@ import styled from 'styled-components'
 const ItemGrid = styled.div`
   display: grid;
   margin-top: 5rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: 16px 1fr 4px;
   grid-template-areas:
-      'icon'
-      'title'
-      'body'
-      'side';
+      'icon icon icon'
+      '. title .'
+      '. body .'
+      '. side. ';
 
   @media (min-width: 768px) {
     grid-template-columns: 1.25fr 3fr .75fr 2fr ;
