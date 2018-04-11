@@ -1,6 +1,6 @@
 const skills = {
   game: {
-    headerVideo: require('../assets/mp4/20180410.mp4'),
+    icon: require('../assets/gif/unity.gif'),
     title: 'Unity',
     description: 'I enjoy mobile games that feature music. Here are some of my experiments in creating interesting rhythm games.',
     items: [
@@ -35,7 +35,7 @@ const skills = {
     ]
   },
   iOS: {
-    headerVideo: require('../assets/mp4/20180406.mp4'),
+    icon: require('../assets/gif/iOS.gif'),
     title: 'iOS',
     description: 'In 2012, I began teaching myself iOS development. Since then, I have done both freelance and professional work. I have an interest in the iPhone’s hardware capabilities, such as the camera and sensors. My goal is to create consumer internet applications with mass appeal.',
     items: [
@@ -102,8 +102,8 @@ const skills = {
     ]
   },
   web: {
-    headerVideo: require('../assets/mp4/20180408.mp4'),
-    title: 'Frontend',
+    icon: require('../assets/gif/web.gif'),
+    title: 'Web',
     description: 'I enjoy the fast pace jungle of frontend development. Learning new web technologies gives a front row seat to the internet\'s evolution. Outside of my hobby projects, I also have done professional work.',
     items: [
       {
@@ -173,7 +173,7 @@ const skills = {
     ]
   },
   music: {
-    headerVideo: require('../assets/mp4/20180407.mp4'),
+    icon: require('../assets/gif/music.gif'),
     title: 'Music',
     description: 'I learned how to produce music before I learned to code. Here are some work samples.',
     items: [
@@ -213,7 +213,7 @@ const skills = {
     ]
   },
   design: {
-    headerVideo: require('../assets/mp4/20180330.mp4'),
+    icon: require('../assets/gif/design.gif'),
     title: 'Design',
     description: 'I believe that an understanding of both engineering and design is the key to making great products. Here are some design.',
     items: [

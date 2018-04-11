@@ -4,10 +4,16 @@ import styled from 'styled-components'
 import ItemGrid from './item-grid'
 import Project from './project'
 
-const HeaderVideo = styled.video`
+const Icon = styled.img`
   grid-area: icon;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: 480px) {
+    width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `;
 
 const Title = styled.h1`
@@ -54,9 +60,7 @@ const ProjectGrid = styled.div`
 
 const Skill = ({ skill }) =>
   <ItemGrid>
-    <HeaderVideo autoplay preload="auto" src={ skill.headerVideo } />
-
-    <Title>{ skill.title }</Title>
+    <Icon src={ skill.icon } />
 
     <Body>
       <p>{ skill.description }</p>

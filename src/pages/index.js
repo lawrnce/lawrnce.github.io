@@ -10,7 +10,6 @@ import skills from '../data/skills'
 
 const IndexPage = () => (
   <div>
-
     <Hero />
 
     {products.map(product => <Product product={ product } />)}

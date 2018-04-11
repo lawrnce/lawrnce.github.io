@@ -10,7 +10,7 @@ import Contact from '../components/contact'
 const MainWrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 0px 0px 0px;
   padding-top: none;
 
   @media (min-width: 700px) {
@@ -27,7 +27,6 @@ const TemplateWrapper = ({ children }) =>
       ]}
     />
     <MainWrapper>
-      <Header />
       {children()}
       <Contact />
     </MainWrapper>
