@@ -34,14 +34,18 @@ const Description = styled.p`
   grid-area: body;
 `;
 
-const AppStoreIcon = styled(OutboundLink)`
+const Badges = styled.div`
   grid-area: side;
-  margin: 16px auto 0 auto;
+  width: 180px;
+  margin: 6px auto 0 auto;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr;
-    margin: 16px 0 0 0;
+    margin: 6px 0 0 0;
   }
+`;
+
+const BadgeLink = styled(OutboundLink)`
 `;
 
 const Product = ({ product }) =>
@@ -61,9 +65,13 @@ const Product = ({ product }) =>
       </ProductLink>
     </Description>
 
-    <AppStoreIcon to={ product.url }>
-      <img src={ product.appStoreIcon } />
-    </AppStoreIcon>
+    <Badges>
+      {product.badges.map( badgeItem =>
+        <BadgeLink to={ badgeItem.url }>
+          <img src={ badgeItem.icon } />
+        </BadgeLink>
+      )}
+    </Badges>
   </ItemGrid>
 
 export default Product

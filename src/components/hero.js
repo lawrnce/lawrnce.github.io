@@ -20,9 +20,16 @@ const Banner = styled.img`
   }
 `;
 
+const Description = styled.h1`
+  text-align: center;
+`;
+
 const Hero = ({ props }) =>
   <Wrapper>
     <Banner src={ require('../assets/gif/lawrencetran.gif') } />
+    <Description>
+      I make music, apps, and games.
+    </Description>
   </Wrapper>
 
 export default Hero

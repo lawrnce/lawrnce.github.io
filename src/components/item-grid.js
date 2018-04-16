@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ItemGrid = styled.div`
   display: grid;
   margin-top: 5rem;
-  grid-template-columns: 16px 1fr 4px;
+  grid-template-columns: 16px 1fr 16px;
   grid-template-areas:
       'icon icon icon'
       '. title .'

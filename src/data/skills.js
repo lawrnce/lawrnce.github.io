@@ -5,12 +5,16 @@ const skills = {
     description: 'I enjoy mobile games that feature music. Here are some of my experiments in creating interesting rhythm games.',
     items: [
       {
-        title: 'C#',
-        image: require('../assets/img/c#.png')
-      },
-      {
         title: 'Unity',
         image: require('../assets/img/unity.png')
+      },
+      {
+        title: 'UGUI',
+        image: require('../assets/img/unity.png')
+      },
+      {
+        title: 'C#',
+        image: require('../assets/img/c#.png')
       }
     ],
     projects: [
