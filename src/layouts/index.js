@@ -13,7 +13,7 @@ const MainWrapper = styled.div`
   padding: 0px 0px 0px;
   padding-top: none;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     margin-top: 0;
   }
 `;

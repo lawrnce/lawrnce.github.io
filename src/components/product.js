@@ -6,72 +6,79 @@ import ItemGrid from './item-grid'
 import BlueText from './blue-text'
 import OutboundLink from './outbound-link'
 
-const ProductLink = styled(OutboundLink)`
-  color: black;
-  text-decoration: none;
-`;
-
-const IconLink = styled(OutboundLink)`
-  grid-area: icon;
-  padding: 0 0 0 0;
-  margin: 0 auto 0 auto;
-`;
-
 const Icon = styled.img`
+  grid-area: icon;
+  display: block;
   width: 180px;
   height: 180px;
-  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 const Title = styled.h1`
   grid-area: title;
+  display: block;
   text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-`;
-
-const Description = styled.p`
-  grid-area: body;
-`;
-
-const Badges = styled.div`
-  grid-area: side;
-  width: 180px;
-  margin: 6px auto 0 auto;
+  margin-top: 0;
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
-    grid-template-columns: 1fr;
-    margin: 6px 0 0 0;
+    margin-bottom: 24px;
+  }
+`;
+
+const Body = styled.div`
+  grid-area: body;
+  color: black;
+  text-decoration: none;
+`;
+
+const ProductLink = styled(OutboundLink)`
+display: block;
+`;
+
+const Side = styled.div`
+  grid-area: side;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    margin-top: 6px;
   }
 `;
 
 const BadgeLink = styled(OutboundLink)`
 `;
 
+const BadgeIcon = styled.img`
+  display: block;
+  width: 180px;
+  height: auto;
+`;
+
 const Product = ({ product }) =>
   <ItemGrid>
-    <IconLink to={ product.url }>
-      <Icon src={ product.icon } />
-    </IconLink>
+    <Icon src={ product.icon } />
 
     <Title>
         { product.title }
     </Title>
 
-    <Description>
+    <Body>
+      { product.description }<br />
       <ProductLink to={ product.url }>
-        { product.description }<br />
         <BlueText>More info.</BlueText>
       </ProductLink>
-    </Description>
+    </Body>
 
-    <Badges>
+    <Side>
       {product.badges.map( badgeItem =>
         <BadgeLink to={ badgeItem.url }>
-          <img src={ badgeItem.icon } />
+          <BadgeIcon src={ badgeItem.icon } />
         </BadgeLink>
       )}
-    </Badges>
+    </Side>
   </ItemGrid>
 
 export default Product

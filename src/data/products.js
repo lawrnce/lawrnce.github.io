@@ -14,6 +14,7 @@ const products = [
       },
     ],
     slug: 'rocket-buddies',
+    url: 'https://play.google.com/store/apps/details?id=co.lawrencetran.rocketpals',
   },
   {
     title: 'Iffy Camera',
@@ -26,6 +27,7 @@ const products = [
       },
     ],
     slug: 'iffy-camera',
+    url: 'https://itunes.apple.com/us/app/iffy-camera/id1300464164?ls=1&mt=8',
   },
   // {
   //   title: 'Random Emoji',

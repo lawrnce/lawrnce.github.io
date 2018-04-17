@@ -22,6 +22,8 @@ const Banner = styled.img`
 
 const Description = styled.h1`
   text-align: center;
+  margin-right: 16px;
+  margin-left: 16px;
 `;
 
 const Hero = ({ props }) =>
