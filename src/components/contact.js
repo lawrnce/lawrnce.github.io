@@ -6,47 +6,36 @@ import OutboundLink from './outbound-link';
 import BlueText from './blue-text'
 
 const Wrapper = styled.div`
+  text-align: center;
   margin-top: 3rem;
+  margin-bottom: 6rem;
 
   @media (min-width: 700px) {
     margin-top: 5rem;
   }
 `;
 
-const Message = styled.p`
-  text-align: center;
-  line-height: 1.4rem;
-  font-size: 16px;
-`;
-
-const IconList = styled.ul`
-  list-style: none;
-  display: flex;
-  margin: 0 auto 0 auto;
-  justify-content: center;
-  padding: 0 0 0 0;
-`;
-
-const IconElement = styled.li`
-  padding: 1rem 1rem 0 1rem;
-`;
-
+const Button = styled(OutboundLink)`
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+`
 const Contact = props =>
   <Wrapper>
-    <IconList>
-      <IconElement>
-        <OutboundLink to="https://github.com/lawrnce/">
-          <SocialIcon name="github" />
-        </OutboundLink>
-      </IconElement>
-    </IconList>
-
-    <Message>
-      <OutboundLink to="mailto:lawrence.c.tran@outlook.com">
-        <BlueText>Email</BlueText>
-      </OutboundLink>
-      &nbsp;for resume.<br/>
-    </Message>
+    <Button to="https://www.instagram.com/lawrencetran/">
+      Instagram
+    </Button>
+    <Button to="https://www.vimeo.com/lawrencetran/">
+      Vimeo
+    </Button>
+    <Button to="mailto:contact@lawrencetran.co">
+      Email
+    </Button>
   </Wrapper>
 
 export default Contact
